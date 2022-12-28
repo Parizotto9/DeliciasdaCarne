@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Hind Madurai", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background: #cdc2a5;
+}
+.header {
+  display: flex;
+  padding: 0px 10px;
+  justify-content: space-between;
+  align-items: center;
+  background: #b39e7a;
+}
+.logo {
+  width: 80px;
+}
+#home {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  margin-bottom: 50px;
+}
+.back-img {
+  width: 100vw;
+}
+.home-text {
+  position: absolute;
+  font-size: 0.8rem;
+  width: 100vw;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.home-text > h3 {
+  font-family: "Actor", sans-serif;
+}
+.home-text > h1 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 6px;
+}
+#petisco {
+  display: flex;
+  margin: 15px auto;
+  border-radius: 10px;
+  width: calc(100vw -30px);
+  max-width: 900px;
+  overflow: hidden;
+  background-color: #b39e7a;
+  border: 1px solid black;
+}
+.petisco-img {
+  width: 50%;
+}
+.petisco-img > img {
+  height: 100%;
+  width: 100%;
+}
+.petisco-text {
+  font-size: 0.9rem;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bovino {
+  background-image: url("assets/bovina.jpg");
+}
+.suino {
+  background-image: url("assets/suino.jpg");
+}
+.frango {
+  background-image: url("assets/frango.jpg");
+}
+.bovino,
+.suino,
+.frango {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40vw;
+  overflow: hidden;
+  height: 40vw;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+.sessoes-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.sessoes-text {
+  padding-left: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+#sessoes > h2,
+#contato > h2 {
+  font-family: "Actor", sans-serif;
+  font-size: 2em;
+  margin: 30px;
+}
+#sessoes {
+  text-align: center;
+  margin-top: 40px;
+}
+#sobre {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #b39e7a;
+  border: 1px solid black;
+}
+.sobre-img {
+  width: 50%;
+  overflow: hidden;
+}
+.sobre-img > img {
+  height: 100%;
+  width: 100%;
+  min-width: 250px;
+}
+.sobre-text > h5 {
+  max-width: 80%;
+}
+.sobre-text {
+  font-size: 0.9rem;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contato {
+  text-align: center;
+}
+.fale > h5 {
+  font-family: "Actor", sans-serif;
+}
+.fale {
+  /* max-width: 350px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.funcionamento {
+  margin-top: 30px;
+}
+.fale > p {
+  font-size: 1.3rem;
+}
+.form {
+  text-align: start;
+  width: 80vw;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.submit {
+  display: flex;
+  margin-top: 5px;
+  display: block;
+}
+.submit > button {
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px 20px;
+  background: #ba5924;
+  border: 2px solid #713412;
+  font-size: 1.1rem;
+  color: white;
+}
+.icons {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.list {
+  list-style: none;
+  margin: 10px;
+  height: 40px;
+  width: 40px;
+  background: #713412;
+  border-radius: 50px;
+  padding: 5px;
+  position: relative;
+  margin-top: -10px;
+}
+.list > a {
+  position: absolute;
+  font-size: 1.2rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: white;
+}
+
+#local {
+  text-align: center;
+  padding-top: 30px;
+  font-family: "Actor", sans-serif;
+  color: white;
+  margin-top: 40;
+  background: #ba5924;
+}
+#local > h2 {
+  font-size: 2rem;
+}
+#local > p {
+  margin: 20px 0;
+}
+#footer {
+  background: #713412;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+}
+.fixed {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  border-radius: 20px;
+  padding: 5px 20px;
+  color: white;
+  font-size: 1.1rem;
+  border: 2px solid #713412;
+  background: #d4a771;
+}
+
+@media screen and (max-width: 578px) {
+  .drawer {
+    display: none;
+  }
+  .extra2,
+  .extra {
+    display: none;
+  }
+}
+@media screen and (min-width: 579px) and (max-width: 1000px) {
+  .drawer {
+    margin-right: 20px !important;
+  }
+  .logo {
+    margin-left: 20px !important;
+  }
+  .link-header > a {
+    font-size: 1.1rem !important;
+  }
+  .extra2 {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 579px) {
+  .logo {
+    margin-left: 50px;
+  }
+  .back-img {
+    max-height: 100vh;
+  }
+  .drawer {
+    display: flex;
+    margin-right: 50px;
+  }
+  .drawer > li {
+    list-style: none;
+    margin: 0 10px;
+  }
+  .link-header > a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: white !important;
+  }
+  .drawer-mob {
+    display: none !important;
+  }
+  .home-text {
+    font-size: 1.4rem;
+  }
+  .petisco-text {
+    font-size: 1.5rem;
+  }
+  .bovino,
+  .suino,
+  .frango {
+    width: 30vw;
+    max-width: 300px;
+    max-height: 300px;
+    height: 30vw;
+  }
+  .sessoes-text {
+    font-size: 1.5rem;
+  }
+  .sobre-text {
+    font-size: 1.2rem;
+  }
+  #contato {
+    font-size: 1.2rem;
+  }
+  #local {
+    font-size: 1.4rem;
+  }
+}
